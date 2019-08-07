@@ -15,7 +15,11 @@ namespace SalesforceSharp.Serialization
 
         public JsonSerializer()
         {
-            serializer = new Newtonsoft.Json.JsonSerializer();
+            serializer = new Newtonsoft.Json.JsonSerializer()
+            {
+                NullValueHandling = NullValueHandling.Ignore,
+                ContractResolver = new SalesforceContractResolver()
+            };
         }
 
         public T Deserialize<T>(string json)

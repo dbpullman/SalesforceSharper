@@ -35,5 +35,17 @@ namespace SalesforceSharp.Tests
             Assert.AreEqual("1234", acct.Id);
             Assert.AreEqual("Test Account", acct.Name);
         }
+
+        [TestMethod]
+        public void SerializeWithFieldAttributeShouldGenerateFieldNameAsJsonProperty()
+        {
+            var ser = new JsonSerializer();
+
+            var acct = new Account() { Id = "1234", Name = "Test Account" };
+
+            var str = ser.Serialize(acct);
+
+            Assert.AreEqual("{\r\n  \"Id\": \"1234\",\r\n  \"Name__c\": \"Test Account\"\r\n}", str);
+        }
     }
 }
