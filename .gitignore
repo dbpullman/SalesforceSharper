@@ -1,7 +1,7 @@
 .vs/*
-SalesforceSharp/bin/*
-SalesforceSharp.Tests/bin/*
-SalesforceSharp/obj/*
-SalesforceSharp.Tests/obj/*
+SalesforceSharper/bin/*
+SalesforceSharper.Tests/bin/*
+SalesforceSharper/obj/*
+SalesforceSharper.Tests/obj/*
 
 passwords.txt
