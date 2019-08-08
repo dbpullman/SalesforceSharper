@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SalesforceSharp\SalesforceSharp.csproj" />
+    <ProjectReference Include="..\SalesforceSharper\SalesforceSharper.csproj" />
   </ItemGroup>
 
   <ItemGroup>
