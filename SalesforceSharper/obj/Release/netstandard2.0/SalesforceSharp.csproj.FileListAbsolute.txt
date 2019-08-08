@@ -1,9 +1,0 @@
-C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharp\bin\Release\netstandard2.0\SalesforceSharp.deps.json
-C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharp\bin\Release\netstandard2.0\SalesforceSharp.dll
-C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharp\bin\Release\netstandard2.0\SalesforceSharp.pdb
-C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharp\obj\Release\netstandard2.0\SalesforceSharp.csprojAssemblyReference.cache
-C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharp\obj\Release\netstandard2.0\SalesforceSharp.csproj.CoreCompileInputs.cache
-C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharp\obj\Release\netstandard2.0\SalesforceSharp.AssemblyInfoInputs.cache
-C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharp\obj\Release\netstandard2.0\SalesforceSharp.AssemblyInfo.cs
-C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharp\obj\Release\netstandard2.0\SalesforceSharp.dll
-C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharp\obj\Release\netstandard2.0\SalesforceSharp.pdb
