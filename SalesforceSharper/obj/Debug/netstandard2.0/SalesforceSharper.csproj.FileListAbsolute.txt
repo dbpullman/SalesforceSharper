@@ -1,0 +1,9 @@
+C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharper\bin\Debug\netstandard2.0\SalesforceSharper.deps.json
+C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharper\bin\Debug\netstandard2.0\SalesforceSharper.dll
+C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharper\bin\Debug\netstandard2.0\SalesforceSharper.pdb
+C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharper\obj\Debug\netstandard2.0\SalesforceSharper.csprojAssemblyReference.cache
+C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharper\obj\Debug\netstandard2.0\SalesforceSharper.csproj.CoreCompileInputs.cache
+C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharper\obj\Debug\netstandard2.0\SalesforceSharper.AssemblyInfoInputs.cache
+C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharper\obj\Debug\netstandard2.0\SalesforceSharper.AssemblyInfo.cs
+C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharper\obj\Debug\netstandard2.0\SalesforceSharper.dll
+C:\Users\PullmanD\Desktop\SalesforceSharp\SalesforceSharper\obj\Debug\netstandard2.0\SalesforceSharper.pdb
