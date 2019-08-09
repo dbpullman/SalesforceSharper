@@ -12,11 +12,13 @@ https://www.nuget.org/packages/SalesforceSharper/
 
 To use SalesforceSharper, you must authenticate before making any other method calls:
 
+#### Note: Your password is a combination of your user password and security token
+
 ```csharp
 var auth = new UsernamePasswordAuthenticator("<ConsumerKey>",
                 "<ConsumerSecret>",
                 "<Username>",
-                "<Password>");
+                "<Password><SecurityToken>");
 
 var authInfo = await auth.Authenticate();
 
