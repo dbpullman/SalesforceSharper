@@ -10,5 +10,6 @@ namespace SalesforceSharp.Interfaces
         Task<string> Create<T>(T record);
         Task<bool> Update<T>(string id, T record);
         Task<bool> Delete<T>(string id);
+        Task<T> GetById<T>(string id);
     }
 }
