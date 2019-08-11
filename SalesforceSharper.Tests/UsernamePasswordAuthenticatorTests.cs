@@ -10,10 +10,10 @@ namespace SalesforceSharp.Tests
         [TestMethod]
         public async Task AuthenticateShouldReturnValidAuthenticationInfo()
         {
-            var auth = new UsernamePasswordAuthenticator("<ConsumerKey>",
-                "<ConsumerSecret>",
-                "<Username>",
-                "<Password>");
+            var auth = new UsernamePasswordAuthenticator("ConsumerKey",
+                "ConsumerSecret",
+                "Username",
+                "Password+SecurityToken");
 
             var authInfo = await auth.Authenticate();
 

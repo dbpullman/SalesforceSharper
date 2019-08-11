@@ -14,10 +14,10 @@ namespace SalesforceSharp.Tests
         [TestInitialize]
         public async Task Initialize()
         {
-            var auth = new UsernamePasswordAuthenticator("<ConsumerKey>",
-                "<ConsumerSecret>",
-                "<Username>",
-                "<Password>");
+            var auth = new UsernamePasswordAuthenticator("ConsumerKey",
+                "ConsumerSecret",
+                "Username",
+                "Password+SecurityToken");
 
             var authInfo = await auth.Authenticate();
 
@@ -38,6 +38,14 @@ namespace SalesforceSharp.Tests
             var result = await client.QueryAll<Account>("SELECT Id, Name FROM Account LIMIT 4000");
 
             Assert.AreEqual(4000, result.Count);
+        }
+
+        [TestMethod]
+        public async Task GetByIdShouldReturnObjectWithProvidedId()
+        {
+            var results = await client.GetById<Account>("0010b00002PvblhAAB");
+
+            Assert.AreEqual("0010b00002PvblhAAB", results.Id);
         }
     }
 }
