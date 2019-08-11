@@ -1,16 +1,24 @@
-# SalesforceSharp
+# SalesforceSharper
 
-SalesforceSharp is a light-weight, easy to use asynchronous REST client for Salesforce written in .NET.
+SalesforceSharper is a light-weight, easy to use asynchronous REST client for Salesforce written in .NET.
+
+## Installing
+
+To add SalesforceSharper to your project, use the Nuget package on Nuget.org
+
+https://www.nuget.org/packages/SalesforceSharper/
 
 ## Usage
 
-To use SalesforceSharp, you must authenticate before making any other method calls:
+To use SalesforceSharper, you must authenticate before making any other method calls:
+
+#### Note: Your password is a combination of your user password and security token
 
 ```csharp
 var auth = new UsernamePasswordAuthenticator("<ConsumerKey>",
                 "<ConsumerSecret>",
                 "<Username>",
-                "<Password>");
+                "<Password><SecurityToken>");
 
 var authInfo = await auth.Authenticate();
 
