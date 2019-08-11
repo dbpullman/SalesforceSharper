@@ -41,7 +41,7 @@ namespace SalesforceSharp.Tests
         {
             var ser = new JsonSerializer();
 
-            var acct = new Account() { Id = "1234", Name = "Test Account" };
+            var acct = new CustomAccount() { Id = "1234", Name = "Test Account" };
 
             var str = ser.Serialize(acct);
 

@@ -144,5 +144,23 @@ namespace SalesforceSharp
         {
             return await Update(typeof(T).GetObjectName(), id, record);
         }
+
+        public async Task<T> GetById<T>(string sObjectName, string id)
+        {
+            var url = new SObjectUrlBuilder(apiVersion)
+                .ForSObject(sObjectName)
+                .WithId(id)
+                .ToString();
+
+            var response = await httpClient.GetAsync(url);
+            var content = await response.Content.ReadAsStringAsync();
+
+            return serializer.Deserialize<T>(content);
+        }
+
+        public async Task<T> GetById<T>(string id)
+        {
+            return await GetById<T>(typeof(T).GetObjectName(), id);
+        }
     }
 }
