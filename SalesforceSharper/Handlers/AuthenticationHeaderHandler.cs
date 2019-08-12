@@ -10,7 +10,7 @@ namespace SalesforceSharp.Handlers
     {
         public readonly string accessToken;
 
-        public AuthenticationHeaderHandler(string accessToken) : base(new ContentTypeHandler())
+        public AuthenticationHeaderHandler(string accessToken) : base(new HttpClientHandler())
         {
             this.accessToken = accessToken;
         }

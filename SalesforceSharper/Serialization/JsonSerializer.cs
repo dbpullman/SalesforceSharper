@@ -22,6 +22,8 @@ namespace SalesforceSharp.Serialization
             };
         }
 
+        public string ContentType => "application/json";
+
         public T Deserialize<T>(string json)
         {
             using (StringReader stringReader = new StringReader(json))

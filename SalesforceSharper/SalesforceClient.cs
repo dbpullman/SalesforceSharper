@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Http.Headers;
 
 namespace SalesforceSharp
 {
@@ -38,6 +39,7 @@ namespace SalesforceSharp
             {
                 BaseAddress = new Uri(instanceUrl)
             };
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(serializer.ContentType));
 
             this.apiVersion = apiVersion;
             this.serializer = serializer;
@@ -54,7 +56,7 @@ namespace SalesforceSharp
                 .ForSObject(objectName)
                 .ToString();
 
-            var body = new StringContent(serializer.Serialize(record));
+            var body = new StringContent(serializer.Serialize(record), Encoding.UTF8, serializer.ContentType);
             var response = await httpClient.PostAsync(url, body);
 
             if(response.IsSuccessStatusCode)
@@ -133,8 +135,8 @@ namespace SalesforceSharp
                 .WithId(id)
                 .ToString();
 
-            var body = new StringContent(serializer.Serialize(record));
-            var content = new StringContent(serializer.Serialize(record));
+            //var body = new StringContent(serializer.Serialize(record));
+            var content = new StringContent(serializer.Serialize(record), Encoding.UTF8, serializer.ContentType);
             var response = await httpClient.PatchAsync(url, content);
 
             return response.IsSuccessStatusCode;
