@@ -2,6 +2,7 @@
 using SalesforceSharp.Authentication;
 using SalesforceSharp;
 using System.Threading.Tasks;
+using SalesforceSharper.Serialization;
 
 namespace SalesforceSharp.Tests
 {

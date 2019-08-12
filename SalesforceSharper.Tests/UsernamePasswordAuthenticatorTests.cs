@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SalesforceSharp.Authentication;
+using SalesforceSharper.Serialization;
 using System.Threading.Tasks;
 
 namespace SalesforceSharp.Tests
