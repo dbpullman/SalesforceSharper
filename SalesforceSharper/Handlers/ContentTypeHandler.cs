@@ -3,7 +3,7 @@ using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SalesforceSharp.Handlers
+namespace SalesforceSharper.Handlers
 {
     public class ContentTypeHandler : DelegatingHandler
     {

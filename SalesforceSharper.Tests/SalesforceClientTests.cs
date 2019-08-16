@@ -1,10 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SalesforceSharp.Authentication;
-using SalesforceSharp;
+using SalesforceSharper.Authentication;
+using SalesforceSharper;
 using System.Threading.Tasks;
 using SalesforceSharper.Serialization;
 
-namespace SalesforceSharp.Tests
+namespace SalesforceSharper.Tests
 {
 
     [TestClass]

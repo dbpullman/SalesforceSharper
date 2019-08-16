@@ -1,12 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SalesforceSharp.Builders;
+using SalesforceSharper.Builders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SalesforceSharp.Tests
+namespace SalesforceSharper.Tests
 {
     [TestClass]
     public class UrlBuilderTests

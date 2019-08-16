@@ -1,6 +1,6 @@
-﻿using SalesforceSharp.Attributes;
+﻿using SalesforceSharper.Attributes;
 
-namespace SalesforceSharp.Tests
+namespace SalesforceSharper.Tests
 {
     [SalesforceObject("CustomObject__c")]
     public class CustomObjectWithAttribute

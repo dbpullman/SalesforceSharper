@@ -1,6 +1,6 @@
-﻿using SalesforceSharp.Attributes;
+﻿using SalesforceSharper.Attributes;
 
-namespace SalesforceSharp.Tests
+namespace SalesforceSharper.Tests
 {
     public class Account
     {

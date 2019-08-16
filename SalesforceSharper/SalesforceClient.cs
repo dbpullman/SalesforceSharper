@@ -1,7 +1,7 @@
-﻿using SalesforceSharp.Handlers;
-using SalesforceSharp.Interfaces;
-using SalesforceSharp.Serialization;
-using SalesforceSharp.Builders;
+﻿using SalesforceSharper.Handlers;
+using SalesforceSharper.Interfaces;
+using SalesforceSharper.Serialization;
+using SalesforceSharper.Builders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http.Headers;
 
-namespace SalesforceSharp
+namespace SalesforceSharper
 {
     public class SalesforceClient : ISalesforceClient
     {
@@ -144,7 +144,7 @@ namespace SalesforceSharp
 
         public async Task<bool> Update<T>(string id, T record)
         {
-            return await Update(typeof(T).GetObjectName(), id, record);
+            return await Update(record.GetObjectName(), id, record);
         }
 
         public async Task<T> GetById<T>(string sObjectName, string id)

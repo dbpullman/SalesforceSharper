@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 
-namespace SalesforceSharp
+namespace SalesforceSharper
 {
     public static class HttpMethodExtensions
     {

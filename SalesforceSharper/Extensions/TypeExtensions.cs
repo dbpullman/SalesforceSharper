@@ -1,4 +1,4 @@
-﻿using SalesforceSharp.Attributes;
+﻿using SalesforceSharper.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SalesforceSharp
+namespace SalesforceSharper
 {
     public static class TypeExtensions
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SalesforceSharp.Authentication
+namespace SalesforceSharper.Authentication
 {
     public interface IAuthenticator
     {

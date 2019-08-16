@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SalesforceSharp.Attributes
+namespace SalesforceSharper.Attributes
 {
     public class SalesforceObjectAttribute : Attribute
     {

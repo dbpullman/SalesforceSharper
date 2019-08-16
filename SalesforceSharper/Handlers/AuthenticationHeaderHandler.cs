@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System;
 using System.Net.Http.Headers;
 
-namespace SalesforceSharp.Handlers
+namespace SalesforceSharper.Handlers
 {
     public class AuthenticationHeaderHandler : DelegatingHandler
     {
