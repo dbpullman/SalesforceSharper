@@ -1,4 +1,4 @@
-﻿using SalesforceSharp.Serialization;
+﻿using SalesforceSharper.Serialization;
 using System;
 using System.Collections.Generic;
 using System.IO;

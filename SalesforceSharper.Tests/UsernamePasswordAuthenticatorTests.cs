@@ -1,9 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SalesforceSharp.Authentication;
+using SalesforceSharper.Authentication;
 using SalesforceSharper.Serialization;
 using System.Threading.Tasks;
 
-namespace SalesforceSharp.Tests
+namespace SalesforceSharper.Tests
 {
     [TestClass]
     public class UsernamePasswordAuthenticatorTests

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SalesforceSharp.Interfaces
+namespace SalesforceSharper.Interfaces
 {
     public interface ISalesforceClient
     {

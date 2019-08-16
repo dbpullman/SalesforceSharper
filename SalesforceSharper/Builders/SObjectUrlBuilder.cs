@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SalesforceSharp.Builders
+namespace SalesforceSharper.Builders
 {
     public class SObjectUrlBuilder : UrlBuilder
     {

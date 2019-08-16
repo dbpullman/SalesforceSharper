@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
 
-namespace SalesforceSharp.Authentication
+namespace SalesforceSharper.Authentication
 {
     [Serializable, XmlRoot("OAuth")]
     public class AuthenticationInfo

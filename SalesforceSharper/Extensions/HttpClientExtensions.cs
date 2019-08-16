@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SalesforceSharp
+namespace SalesforceSharper
 {
     public static class HttpClientExtensions
     {

@@ -6,9 +6,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using SalesforceSharp.Attributes;
+using SalesforceSharper.Attributes;
 
-namespace SalesforceSharp.Serialization
+namespace SalesforceSharper.Serialization
 {
     public class SalesforceContractResolver : DefaultContractResolver
     {

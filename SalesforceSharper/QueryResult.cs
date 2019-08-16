@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace SalesforceSharp
+namespace SalesforceSharper
 {
     [Serializable, XmlRoot("QueryResult")]
     public class QueryResult<T>

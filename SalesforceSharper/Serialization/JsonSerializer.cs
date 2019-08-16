@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SalesforceSharp.Serialization
+namespace SalesforceSharper.Serialization
 {
     public class JsonSerializer : ISerializer
     {
