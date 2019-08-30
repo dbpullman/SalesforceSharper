@@ -36,7 +36,7 @@ namespace SalesforceSharper.Authentication
         {
             using (var client = new HttpClient())
             {
-                var baseAddress = isSandbox ? "https://login.salesforce.com" : "https://test.salesforce.com";
+                var baseAddress = !isSandbox ? "https://login.salesforce.com" : "https://test.salesforce.com";
                 client.BaseAddress = new Uri(baseAddress);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(serializer.ContentType));
                 var content = new FormUrlEncodedContent(new List<KeyValuePair<string, string>>()

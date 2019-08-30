@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesforceSharper", "SalesforceSharper\SalesforceSharper.csproj", "{1D50250D-761A-47D1-989C-6FCC7480C1C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesforceSharper.Tests", "SalesforceSharper.Tests\SalesforceSharper.Tests.csproj", "{C529E1E4-BDA6-4417-9AAB-8451BFD98E68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesforceSharper.Tests", "SalesforceSharper.Tests\SalesforceSharper.Tests.csproj", "{C529E1E4-BDA6-4417-9AAB-8451BFD98E68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
