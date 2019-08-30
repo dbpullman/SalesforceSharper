@@ -18,6 +18,12 @@ namespace SalesforceSharper.Builders
             return this;
         }
 
+        public SObjectUrlBuilder Describe()
+        {
+            url = $"{url}/describe";
+            return this;
+        }
+
         public SObjectUrlBuilder WithId(string id)
         {
             url = $"{url}/{id}";

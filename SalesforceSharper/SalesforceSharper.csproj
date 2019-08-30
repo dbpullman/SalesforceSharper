@@ -2,11 +2,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>SalesforceSharper</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.5</Version>
     <Authors>David Pullman</Authors>
     <Description>A light-weight, easy to use, asynchronous REST client for Salesforce</Description>
     <PackageLicenseUrl />
     <PackageProjectUrl>https://github.com/dbpullman/SalesforceSharper</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <PackageReleaseNotes>Added DescribeObject method to client</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

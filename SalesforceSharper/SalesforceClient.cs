@@ -164,5 +164,18 @@ namespace SalesforceSharper
         {
             return await GetById<T>(typeof(T).GetObjectName(), id);
         }
+
+        public async Task<ObjectDescribeResponse> DescribeObject(string objectName)
+        {
+            var url = new SObjectUrlBuilder(apiVersion)
+                .ForSObject(objectName)
+                .Describe()
+                .ToString();
+
+            var response = await httpClient.GetAsync(url);
+            var content = await response.Content.ReadAsStringAsync();
+
+            return serializer.Deserialize<ObjectDescribeResponse>(content);
+        }
     }
 }
