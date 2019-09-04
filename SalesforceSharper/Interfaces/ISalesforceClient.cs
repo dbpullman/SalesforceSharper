@@ -11,5 +11,6 @@ namespace SalesforceSharper.Interfaces
         Task<bool> Update<T>(string id, T record);
         Task<bool> Delete<T>(string id);
         Task<T> GetById<T>(string id);
+        Task<ObjectDescribeResponse> DescribeObject(string sObjectName);
     }
 }

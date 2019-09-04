@@ -1,0 +1,12 @@
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\bin\Debug\netstandard2.0\SalesforceSharper.Generator.deps.json
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\bin\Debug\netstandard2.0\SalesforceSharper.Generator.dll
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\bin\Debug\netstandard2.0\SalesforceSharper.Generator.pdb
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\bin\Debug\netstandard2.0\SalesforceSharper.dll
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\bin\Debug\netstandard2.0\SalesforceSharper.pdb
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\obj\Debug\netstandard2.0\SalesforceSharper.Generator.csprojAssemblyReference.cache
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\obj\Debug\netstandard2.0\SalesforceSharper.Generator.csproj.CoreCompileInputs.cache
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\obj\Debug\netstandard2.0\SalesforceSharper.Generator.AssemblyInfoInputs.cache
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\obj\Debug\netstandard2.0\SalesforceSharper.Generator.AssemblyInfo.cs
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\obj\Debug\netstandard2.0\SalesforceSharper.Generator.csproj.CopyComplete
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\obj\Debug\netstandard2.0\SalesforceSharper.Generator.dll
+C:\dev\SalesforceSharper\SalesforceSharper.Generator\obj\Debug\netstandard2.0\SalesforceSharper.Generator.pdb
