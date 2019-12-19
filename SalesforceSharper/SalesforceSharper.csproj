@@ -10,6 +10,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.5.0</AssemblyVersion>
     <PackageReleaseNotes>Added DescribeObject method to client</PackageReleaseNotes>
+    <UserSecretsId>724345d0-e194-4f84-b7a7-72293b355e5e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

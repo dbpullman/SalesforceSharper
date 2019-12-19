@@ -14,8 +14,64 @@ namespace SalesforceSharper.Tests
     [TestClass]
     public class ModelBuilderTests
     {
+        private static SalesforceClient client;
+        private static IConfiguration Configuration;
+
+        [ClassInitialize]
+        public static async Task Initialize(TestContext context)
+        {
+            var builder = new ConfigurationBuilder();
+            builder.AddUserSecrets<SalesforceClientTests>();
+
+            Configuration = builder.Build();
+
+            var auth = new UsernamePasswordAuthenticator(Configuration["Salesforce:ConsumerKey"],
+                Configuration["Salesforce:ConsumerSecret"],
+                Configuration["Salesforce:Username"],
+                Configuration["Salesforce:Password"],
+                true);
+
+            var authInfo = await auth.Authenticate();
+
+            client = new SalesforceClient(authInfo.InstanceUrl, authInfo.AccessToken);
+        }
+
         [TestMethod]
-        public void BuildShouldGenerateStringFromDescribe()
+        public void ClassGeneratorTests()
+        {
+            var generator = new ClassGenerator()
+            {
+                Namespace = "SalesforceSharper.Tests",
+                Name = "Account",
+                AccessModifier = "public",
+                UsingStatements = new List<UsingStatement>()
+                {
+                    new UsingStatement() { Name = "Newtonsoft.Json" }
+                },
+                Properties = new List<Property>()
+                {
+                    new Property()
+                    {
+                        AccessModifier = "public",
+                        Name = "Id",
+                        Type = "string",
+                        Attribute = "[JsonProperty(\"Id\")]"
+                    },
+                    new Property()
+                    {
+                        AccessModifier = "public",
+                        Name = "NumberOfEmployees",
+                        Type = "int",
+                        Attribute = "[JsonProperty(\"NumberOfEmployees\")]"
+                    }
+                }
+            };
+
+            var definition = generator.Generate();
+        }
+
+        [TestMethod]
+        public void ClassGeneratorTest2()
         {
             var describe = new ObjectDescribeResponse()
             {
@@ -25,56 +81,25 @@ namespace SalesforceSharper.Tests
                 {
                     new Field() { Name = "Id", Type = "id" },
                     new Field() { Name = "Name", Type = "string" },
-                    new Field() { Name = "Custom_Field__c", Type = "string" }
+                    new Field() { Name = "Custom_Field__c", Type = "string" },
+                    new Field() { Name = "Custom_Field_Again__c", Type = "int"}
                 }
             };
 
-            var builder = new ModelGenerator();
-            var classString = builder.Generate(describe);
+            var generator = new SalesforceClassGenerator(describe);
 
-            Assert.IsNotNull(classString);
+            var classDefinition = generator.Generate();
         }
 
         [TestMethod]
-        public void MyTestMethod()
+        public async Task Generate_ShouldGenerateStringFromObjectDescribe()
         {
-            var properties = new List<Field>()
-            {
-                new Field() { Name = "Id", Type = "id" },
-                new Field() { Name = "Name", Type = "string" },
-                new Field() { Name = "Custom_Field__c", Type = "string" }
-            };
+            var describe = await client.DescribeObject("Account");
+            var generator = new SalesforceClassGenerator(describe);
+            var classDefinition = generator.Generate();
 
-            var generator = new TestClassGenerator("Account")
-            {
-                Namespace = "SalesforceSharper.Tests",
-                Properties = properties.Select(i => $"public {i.Type} {i.Name} {{ get; set; }}").ToList(),
-                UsingStatements = new List<string>()
-                {
-                    "Newtonsoft.Json;",
-                    "SalesforceSharper.Interfaces"
-                }
-            };
-
-            var classString = generator.Generate();
-        }
-    }
-
-    public class TestClassGenerator : ClassGenerator
-    {
-        public TestClassGenerator(string name) : base(name)
-        {
-            Namespace = "SalesforceSharper.Tests";
-            UsingStatements = new List<string>()
-            {
-                "using Newtonsoft.Json;",
-                "using SalesforceSharper;"
-            };
-        }
-
-        protected override string Generate(StringBuilder builder)
-        {
-            return base.Generate(builder);
+            Assert.IsNotNull(describe);
+            Assert.AreEqual("Account", generator.Name);
         }
     }
 }
