@@ -5,3 +5,4 @@ SalesforceSharper/obj/*
 SalesforceSharper.Tests/obj/*
 
 passwords.txt
+/SalesforceSharper.Generator
